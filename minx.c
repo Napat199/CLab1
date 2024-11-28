@@ -1,23 +1,19 @@
 #include <unistd.h>
 #include <stdio.h>
 int main() {
-	int a = 0;
-	int b = 1;
-	int a;
-	int b;
+	int n1;
+	int n2;
 	printf("Input number : ");
-	scanf("%d", &a);
+	scanf("%d", &n1);
 	printf("Input number : ");
-	scanf("%d", &b);
-	if (a>b){
-		printf("Number 1 greater than Number 2");
-	    int g = a - b;
-		printf("%d %s %d %s %d", a," more than ",b," = ",g);
+	scanf("%d", &n2);
+	if (n1>n2){
+	    int g = n1 - n2;
+		printf("%d %s %d %s %d", n1," more than ",n2," = ",g);
 	}
 	else {
-		printf("Number 2 greater than Number 1");
-	    int g = b - a;
-		printf("%d %s %d %s %d", b," more than ",a," = ",g);
+	    int g = n2 - n1;
+		printf("%d %s %d %s %d", n2," more than ",n1," = ",g);
 	}	
 	return 0;
 }
